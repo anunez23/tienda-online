@@ -1,0 +1,27 @@
+
+/*Fila perfil*/
+
+#parte-sup{
+  background-color: #FFFCEB;
+}
+
+/*Imagen perfil*/
+#img-per{
+  position: relative;
+}
+
+/*Cambiar imagen perfil*/
+#pos-edit{
+  position: absolute;
+  bottom: 2%;
+}
+
+
+
+/*Medias query*/
+
+@media (max-width: 775px) {
+  .text-center{
+    text-align: right;
+  }
+}

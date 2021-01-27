@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "tienda-online"
+  "defaultProject": "tienda-online",
+  "cli": {
+    "analytics": false
+  }
 }

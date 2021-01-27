@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+  background:linear-gradient(#FFA994,#FFC394) ;
+}
+
+body,div
+{
+  min-height: 100%;
+  position: relative;
+}
+
+footer{
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
