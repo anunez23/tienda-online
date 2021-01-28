@@ -1,0 +1,5 @@
+<h1 class="animated-fast">Buscador: <small>{{searchText}}</small></h1>
+<hr />
+<div class="card-columns">
+  <app-producto-tarjeta  *ngFor="let foo of productFound; let i = index" [product]="foo" [index]="foo.id"></app-producto-tarjeta>
+</div>

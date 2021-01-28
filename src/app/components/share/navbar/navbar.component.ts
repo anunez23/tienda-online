@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {style} from '@angular/animations';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -8,7 +9,7 @@ import {style} from '@angular/animations';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
   }
@@ -19,5 +20,8 @@ export class NavbarComponent implements OnInit {
       document.getElementById("busq")!.style.display = 'none';
     else
       document.getElementById("busq")!.style.display = 'block';
+  }
+  searchProduct(text:string){
+    this.router.navigate(["/search",text]);
   }
 }

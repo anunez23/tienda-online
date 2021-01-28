@@ -10,9 +10,9 @@
     <a class="navbar-brand">
       <img src="assets/images/lupa.png" width="30" height="30" alt="lupa" class="img-fluid" id="lupa" (click)="visualizaBusqueda()">
     </a>
-    <form class="form-inline my-2 my-lg-0" id="busq">
-      <input class="form-control mr-sm-2" type="search" placeholder="Buscar Mermelada" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    <form class="form-inline my-2 my-lg-0" id="busq" onsubmit = "return false">
+      <input class="form-control mr-sm-2" type="search" placeholder="Buscar Mermelada" aria-label="Search" (keyup.enter)="searchProduct(buscarTexto.value)"#buscarTexto>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="searchProduct(buscarTexto.value)">Search</button>
     </form>
     <ul class="navbar-nav mr-auto mx-2">
       <li class="nav-item active">
@@ -22,7 +22,7 @@
         <a class="nav-link" [routerLink]="['nosotros']">Nosotros</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Productos</a>
+        <a class="nav-link" [routerLink]="['productos']">Productos</a>
       </li>
     </ul>
     <a class="navbar-brand" [routerLink]="['perfil']">

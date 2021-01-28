@@ -1,0 +1,19 @@
+
+/*Cambiar el color de fondo de los productos*/
+.card{
+  background: linear-gradient(rgba(63, 191, 63, 0.7),rgba(63, 191, 191, 0.2));
+}
+
+/*Cambiar el color de los botones*/
+.btn-outline-primary{
+  background: white;
+  border-color: limegreen;
+  color: limegreen;
+}
+
+/*Cambiar el color de los botones al pasar por encima*/
+.btn-outline-primary:hover{
+  color: white;
+  border-color: white;
+  background-color: limegreen;
+}
