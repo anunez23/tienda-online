@@ -6,6 +6,7 @@ import {PerfilComponent} from './components/perfil/perfil.component';
 import {ProductosComponent} from './components/productos/productos.component';
 import {BuscadorComponent} from './components/buscador/buscador.component';
 import {ProductoComponent} from './components/producto/producto.component';
+import {CarritoCompraComponent} from "./components/carrito-compra/carrito-compra.component";
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path: 'productos', component: ProductosComponent},
   {path: 'search/:text', component: BuscadorComponent},
   {path: 'product/:index', component: ProductoComponent},
+  {path: 'carrito', component:CarritoCompraComponent},
   {path: '**', pathMatch: 'full', redirectTo: 'home' }
   ];
 
