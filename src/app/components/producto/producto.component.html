@@ -1,0 +1,40 @@
+<!--Producto-->
+<div class="container">
+  <div class="row">
+    <div class="col-md-3" id="val">
+      <img src="{{product.imagen}}" alt="{{product.nombre}}" class="img-fluit">
+      <img src="assets/images/mermelada_r.png" alt="valoracion mermelada" class="img-fluit" width="42" height="42">
+      <img src="assets/images/mermelada_r.png" alt="valoracion mermelada" class="img-fluit" width="42" height="42">
+      <img src="assets/images/mermelada_r.png" alt="valoracion mermelada" class="img-fluit" width="42" height="42">
+      <img src="assets/images/mermelada.png" alt="valoracion mermelada" class="img-fluit" width="42" height="42">
+      <img src="assets/images/mermelada.png" alt="valoracion mermelada" class="img-fluit" width="42" height="42">
+      <h1>Alergenos:</h1>
+      <hr/>
+      <h3>{{product.alergeno}}</h3>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-8">
+      <h1>{{product.nombre |uppercase}}</h1>
+      <h2>{{product.precio |currency: 'EUR'}}</h2>
+      <h2>Descripcion</h2>
+      <h4><small>{{product.descripcion}}</small></h4>
+      <img src="assets/images/anadir.png" alt="añadir producto">
+    </div>
+  </div>
+  <!--Comentarios-->
+  <div class="list-group my-3">
+    <h1>RESEÑA</h1>
+    <a class="list-group-item list-group-item-action flex-column align-items-start">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">Juan Antonio Perez</h5>
+      </div>
+      <small>23/01/2021</small><br>
+      <img src="assets/images/mermelada_r.png" alt="valoracion mermelada" class="img-fluit" width="16" height="16">
+      <img src="assets/images/mermelada_r.png" alt="valoracion mermelada" class="img-fluit" width="16" height="16">
+      <img src="assets/images/mermelada_r.png" alt="valoracion mermelada" class="img-fluit" width="16" height="16">
+      <img src="assets/images/mermelada.png" alt="valoracion mermelada" class="img-fluit" width="16" height="16">
+      <img src="assets/images/mermelada.png" alt="valoracion mermelada" class="img-fluit" width="16" height="16">
+      <p class="mb-1">La mejor mermelada del mundo, con un sabor exquisito y muy colorida</p>
+    </a>
+  </div>
+</div>
