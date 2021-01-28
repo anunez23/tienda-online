@@ -1,0 +1,80 @@
+<div class="signup-form">
+  <form>
+    <h2>Registrate</h2>
+    <p>Completa el formulario de registro. Por favor!!</p>
+    <hr>
+    <!--Nombre-->
+    <div class="form-group">
+      <div class="input-group">
+        <div class="input-group-prepend">
+					<span class="input-group-text">
+						<span class="fa fa-user"></span>
+					</span>
+        </div>
+        <input type="text" class="form-control" name="username" placeholder="Nombre" required="required">
+      </div>
+    </div>
+    <!--Telefono-->
+    <div class="form-group">
+      <div class="input-group">
+        <div class="input-group-prepend">
+					<span class="input-group-text">
+						<i class="fa fa-phone"></i>
+					</span>
+        </div>
+        <input type="text" class="form-control" name="telefono" placeholder="Telefono" required="required">
+      </div>
+    </div>
+    <!--Fecha nacimiento-->
+    <div class="form-group">
+      <div class="input-group">
+        <div class="input-group-prepend">
+					<span class="input-group-text">
+						<i class="fa fa-calendar"></i>
+					</span>
+        </div>
+        <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control" name="fnac" placeholder="Fecha de nacimiento" required="required">
+      </div>
+    </div>
+    <!--Correo-->
+    <div class="form-group">
+      <div class="input-group">
+        <div class="input-group-prepend">
+					<span class="input-group-text">
+						<i class="fa fa-paper-plane"></i>
+					</span>
+        </div>
+        <input type="email" class="form-control" name="email" placeholder="Correo" required="required">
+      </div>
+    </div>
+    <!--Contraseña-->
+    <div class="form-group">
+      <div class="input-group">
+        <div class="input-group-prepend">
+					<span class="input-group-text">
+						<i class="fa fa-lock"></i>
+					</span>
+        </div>
+        <input type="text" class="form-control" name="password" placeholder="Contraseña" required="required">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="input-group">
+        <div class="input-group-prepend">
+					<span class="input-group-text">
+						<i class="fa fa-lock"></i>
+						<i class="fa fa-check"></i>
+					</span>
+        </div>
+        <input type="text" class="form-control" name="confirm_password" placeholder="Confirmar Contraseña" required="required">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-check-label"><input type="checkbox" required="required"> Acepta los <a href="#">Termino de Uso</a></label>
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary btn-lg">Registrarse</button>
+    </div>
+  </form>
+  <div class="text-center">Already have an account? <a href="#">Iniciar sesion</a></div>
+</div>
