@@ -15,6 +15,7 @@ import { ProductoTarjetaComponent } from './components/producto-tarjeta/producto
 import { ProductoComponent } from './components/producto/producto.component';
 import {registerLocaleData} from "@angular/common";
 import localES from '@angular/common/locales/es';
+import { CarritoCompraComponent } from './components/carrito-compra/carrito-compra.component';
 
 registerLocaleData(localES);
 
@@ -30,6 +31,7 @@ registerLocaleData(localES);
     BuscadorComponent,
     ProductoTarjetaComponent,
     ProductoComponent,
+    CarritoCompraComponent,
   ],
   imports: [
     BrowserModule,

@@ -13,22 +13,160 @@
   </div>
   <div class="row text-center intermedio">
     <div class="col-lg col-md-12 text-center">
-      <img src="assets/images/editar%20_datos.png" class="img-fluid" alt="edita datos">
-      <h1>EDITAR DATOS</h1>
+      <a style="cursor: pointer" data-toggle="modal" data-target="#cdaro">
+        <img src="assets/images/editar%20_datos.png" class="img-fluid" alt="edita datos">
+        <h1>EDITAR DATOS</h1>
+      </a>
     </div>
     <div class="col-lg col-md-12 text-center">
-      <img src="assets/images/tarjeta-de-credito.png" class="img-fluid" alt="getion de tarjeta">
-      <h1>GESTIONAR TARJETA</h1>
+      <a style="cursor: pointer" data-toggle="modal" data-target="#gtar">
+        <img src="assets/images/tarjeta-de-credito.png" class="img-fluid" alt="getion de tarjeta">
+        <h1>GESTIONAR TARJETA</h1>
+      </a>
     </div>
   </div>
   <div class="row my-3">
     <div class="col-lg col-md-12 text-center">
-      <img src="assets/images/password.png" class="img-fluid" alt="cambio de contraseña">
-      <h1>CAMBIAR PASSWORD</h1>
+      <a style="cursor: pointer" data-toggle="modal" data-target="#cpass">
+        <img src="assets/images/password.png" class="img-fluid" alt="cambio de contraseña">
+        <h1>CAMBIAR PASSWORD</h1>
+      </a>
     </div>
     <div class="col-lg col-md-12 text-center">
       <img src="assets/images/abrir-caja.png" class="img-fluid" alt="pedidos/devoluciones">
       <h1>PEDIDOS/DEVOLUCIONES</h1>
+    </div>
+  </div>
+</div>
+
+<!-- Modal datos-->
+<div class="modal" id="cdaro" tabindex="-1" role="dialog" aria-labelledby="cdatoslabel" aria-hidden="true">
+  <div class="modal-dialog" role="form">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="cdatoslabel">Editar datos</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+
+          <div class="form-group"> <!-- Full Name -->
+            <label for="full_name_id" class="control-label">Nombre completo</label>
+            <input type="text" class="form-control" id="full_name_id" name="full_name" placeholder="Juan Antonio Perez">
+          </div>
+
+          <div class="form-group"> <!-- Phone -->
+            <label for="phone" class="control-label">Telefono</label>
+            <input type="text" class="form-control" id="phone" name="street1" placeholder="622622622">
+          </div>
+
+          <div class="form-group"> <!-- Birthday  -->
+            <label for="datapicker" class="control-label">Cumpleaño</label>
+            <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control" id="datapicker" name="birthday" placeholder="13/12/1998">
+          </div>
+
+          <select class="custom-select">
+            <option selected>Calle Invisible,5</option>
+            <option>Añadir más</option>
+          </select>
+
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal tarjeta-->
+<div class="modal" id="gtar" tabindex="-1" role="dialog" aria-labelledby="gtarlabel" aria-hidden="true">
+  <div class="modal-dialog" role="form">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="gtarlabel">Gestionar Tarjeta</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="#" class="credit-card-div">
+          <div class="panel panel-default" >
+            <div class="panel-heading">
+
+              <div class="row ">
+                <div class="col-md-12">
+                  <input type="text" class="form-control" placeholder="Introduce el número de tarjeta" />
+                </div>
+              </div>
+              <div class="row ">
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                  <span class="help-block text-muted small-font" > Mes expiración</span>
+                  <input type="text" class="form-control" placeholder="MM" />
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                  <span class="help-block text-muted small-font" >  Año expiración</span>
+                  <input type="text" class="form-control" placeholder="YY" />
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                  <span class="help-block text-muted small-font" >  CCV</span>
+                  <input type="text" class="form-control" placeholder="CCV" />
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                  <img src="assets/images/tarjeta-de-credito.png" class="img-rounded img-fluid" width="32" height="32"/>
+                </div>
+              </div>
+              <div class="row ">
+                <div class="col-md-12 pad-adjust">
+
+                  <input type="text" class="form-control" placeholder="Nombre de la tarjeta" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal cambio password-->
+<div class="modal" id="cpass" tabindex="-1" role="dialog" aria-labelledby="cpasslabel" aria-hidden="true">
+  <div class="modal-dialog" role="form">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="cpasslabel">Cambiar contraseña</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form role="form">
+          <div class="form-group">
+            <label for="passa">Contraseña antigua:</label>
+            <input type="email" class="form-control" id="passa">
+          </div>
+          <div class="form-group">
+            <label for="pwdn">Contraseña nueva:</label>
+            <input type="password" class="form-control" id="pwdn">
+          </div>
+          <div class="form-group">
+            <label for="pwdrn">Repertir contraseña nueva:</label>
+            <input type="password" class="form-control" id="pwdrn">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
     </div>
   </div>
 </div>
